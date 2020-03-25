@@ -1,8 +1,11 @@
 import java.util.Random;
+import java.util.logging.Logger;
 
 public class Dice {
     public Integer numDice;
-    public Random r = new Random();
+
+    private static final Logger LOGGER = Logger.getLogger(Dice.class.getName());
+
     public Dice(Integer numDice){
         this.numDice = numDice;
     }
@@ -16,4 +19,11 @@ public class Dice {
         return sum;
     }
 
+    public Integer maxNum(){
+        return numDice * 6;
+    }
+
+    public Integer minNum(){
+        return numDice;
+    }
 }
