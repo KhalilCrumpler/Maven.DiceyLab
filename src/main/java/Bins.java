@@ -14,7 +14,7 @@ public class Bins {
         diceSum = new ArrayList<>();
         this.minDie = minDie;
         this.maxDie = maxDie;
-        for(int i = 0; i <= minDie; i++){
+        for(int i = 0; i <= maxDie; i++){
             diceSum.add(0);
         }
     }
